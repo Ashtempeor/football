@@ -1,0 +1,27 @@
+{
+  "name": "football-manager-game",
+  "version": "1.0.0",
+  "description": "Create your own player and build a legendary football career",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend",
+    "game-engine"
+  ],
+  "scripts": {
+    "install-all": "npm install && npm install --workspace=frontend && npm install --workspace=backend && npm install --workspace=game-engine",
+    "dev": "npm run dev --workspaces",
+    "build": "npm run build --workspaces",
+    "test": "npm test --workspaces",
+    "lint": "npm run lint --workspaces"
+  },
+  "keywords": [
+    "football",
+    "soccer",
+    "game",
+    "career simulation",
+    "manager"
+  ],
+  "author": "Ashtempeor",
+  "license": "MIT"
+}
